@@ -31,7 +31,7 @@
             width: 1.15rem;
             height: 1.53rem;
             position: absolute;
-            top: 4.25rem;
+            top: 6.6%;
             right: .5rem;
             -webkit-animation: go 1s ease-in-out alternate infinite;
             -moz-animation: go 1s ease-in-out alternate infinite;
@@ -84,8 +84,12 @@
             right: .2rem;
         }
         .part2 .videobg{
-            background: url("img/video.png")no-repeat 100% 100%/100% 100%;
             height: 33%;
+            width: 100%;
+        }
+        .part2 .videobg img{
+            width: 100%;
+            height: 100%;
         }
         .part2 .videobg video{
             display: none;
@@ -93,13 +97,21 @@
             position: relative;
         }
         .part2 .dujia{
-            background: url("img/2p/独家礼遇.png")no-repeat 100% 100%/100% 100%;
             height: 42%;
+            width: 100%;
+        }
+        .part2 .dujia img{
+            height: 100%;
+            width: 100%;
         }
 
         .part2 .sawtooth{
-            background: url("img/2p/锯齿.png")no-repeat 100% 100%/100% 100%;
             height: 25%;
+            width: 100%;
+        }
+        .part2 .sawtooth img{
+            height: 100%;
+            width: 100%;
         }
         .part2 .shareButtom{
             background: url("img/2p/button.png")no-repeat 100%/100%;
@@ -269,14 +281,15 @@
         <div class="titlePei"><img src="img/peitu1.png" alt=""/></div>
     </div>
     <div class="part2">
-        <div class="close">X</div>
+        <!--<div class="close">X</div>-->
         <div class="videobg">
-            <video src="img/video.mp4" controls="controls" width="100%" height="100%" class="video">
+            <!--<video src="img/video.mp4" controls="controls" width="100%" height="100%" class="video">
                 您的浏览器不支持 video 标签。
-            </video>
+            </video>-->
+            <img src="img/video.png" alt=""/>
         </div>
-        <div class="dujia"></div>
-        <div class="sawtooth"></div>
+        <div class="dujia"><img src="img/2p/独家礼遇.png" alt=""/></div>
+        <div class="sawtooth"><img src="img/2p/锯齿.png" alt=""/></div>
         <div class="shareButtom"></div>
         <div class="share"></div>
     </div>
