@@ -28,10 +28,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5263158">
-              <caret line="342" column="22" selection-start-line="342" selection-start-column="22" selection-end-line="342" selection-end-column="22" />
+            <state vertical-scroll-proportion="1.3538011">
+              <caret line="430" column="5" selection-start-line="430" selection-start-column="5" selection-end-line="430" selection-end-column="5" />
               <folding>
-                <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -238,10 +237,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5263158">
-          <caret line="342" column="22" selection-start-line="342" selection-start-column="22" selection-end-line="342" selection-end-column="22" />
+        <state vertical-scroll-proportion="1.3538011">
+          <caret line="430" column="5" selection-start-line="430" selection-start-column="5" selection-end-line="430" selection-end-column="5" />
           <folding>
-            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>

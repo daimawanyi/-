@@ -26,6 +26,13 @@
         .part1{
             width: 100%;
         }
+        .part1 .log img{
+            position: absolute;
+            top: .2rem;
+            left: .27rem;
+            width: 2.07rem;
+            height: .52rem;
+        }
         .part1 .titleMove{
             background: url("img/限时优惠2.png")no-repeat 100%/100%;
             width: 1.15rem;
@@ -57,24 +64,20 @@
         }
         .part1 .title{
             height: 40%;
-            width: 100%;
         }
         .part1 .title img{
-            width: 100%;
             height: 100%;
         }
         .part1 .titlePei{
             height: 60%;
-            width: 100%;
         }
         .part1 .titlePei img{
-            width: 100%;
             height: 100%;
         }
         .part2{
             position: relative;
         }
-        .part2 .close{
+        /*.part2 .close{
             position: fixed;
             z-index: 999;
             color: #fff;
@@ -83,39 +86,33 @@
             top: .2rem;
             right: .2rem;
             display: none;
-        }
+        }*/
         .part2 .videobg{
             height: 33%;
-            width: 100%;
+
         }
         .part2 .videobg img{
-            width: 100%;
             height: 100%;
         }
         .adiv video{
             display: none;
             position: fixed;
             z-index: 999;
-            width: 100%;
             height: 33%;
             top: 30%;
         }
         .part2 .dujia{
             height: 42%;
-            width: 100%;
         }
         .part2 .dujia img{
             height: 100%;
-            width: 100%;
         }
 
         .part2 .sawtooth{
             height: 25%;
-            width: 100%;
         }
         .part2 .sawtooth img{
             height: 100%;
-            width: 100%;
         }
         .part2 .shareButtom{
             background: url("img/2p/button.png")no-repeat 100%/100%;
@@ -280,12 +277,13 @@
 <div class="cover"></div>
 <div class="adiv">
     <div class="part1">
+        <div class="log"><img src="img/log.png" alt=""/></div>
         <div class="titleMove"></div>
         <div class="title"><img src="img/标题.png" alt=""/></div>
         <div class="titlePei"><img src="img/peitu1.png" alt=""/></div>
     </div>
     <div class="part2">
-        <div class="close">X</div>
+        <div class="close"></div>
         <div class="videobg">
             <img src="img/video.png" alt=""/>
         </div>
@@ -336,19 +334,17 @@
     var cover=document.getElementsByClassName('cover')[0];
     var close=document.getElementsByClassName('close')[0];
     var body=document.getElementsByTagName('body')[0];
-    close.onclick=function (){
+    /*close.onclick=function (){
         video.style.display='none';
-        cover.style.display='none';
         close.style.display='none';
         video.pause();
         body.style.overflowY='auto'
-    };
+    };*/
     videobg.onclick=function (){
         cover.style.display='block';
         video.style.display="block";
-        close.style.display="block";
         video.play();
-        body.style.overflowY='hidden'
+        document.body.style.overflow='hidden'
     };
     var shareButtom=document.getElementsByClassName('shareButtom')[0];
     var share=document.getElementsByClassName('share')[0];
@@ -363,6 +359,12 @@
     cover.onclick=function (){
         share.style.display='none';
         cover.style.display='none';
+        if(video.style.display="block"){
+            video.style.display='none';
+            close.style.display='none';
+            video.pause();
+            document.body.style.overflow='auto'
+        }
     };
 
     var math1=document.getElementsByClassName('math1')[0];
@@ -426,10 +428,10 @@
                 cover.style.display='block';
             }
         };
-
-
     }
     random();
+
+
     close1.onclick=function (){
         if(right.style.display=='block'){
             right.style.display='none';
@@ -442,6 +444,7 @@
             close1.style.display='none';
             wrongTry.style.display='none';
             cover.style.display='none';
+            random();
         }
     };
     wrongTry.onclick=function (){
@@ -449,6 +452,7 @@
         close1.style.display='none';
         wrongTry.style.display='none';
         cover.style.display='none';
+        random();
     }
 
 
