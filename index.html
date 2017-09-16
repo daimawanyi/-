@@ -10,17 +10,21 @@
             margin: 0;
             padding: 0;
         }
+        .cover{
+            background: rgba(0,0,0,.5);
+            width: 100%;
+            height: 68rem;
+            display: none;
+            position: absolute;
+            z-index: 9;
+        }
         .adiv{
+            position: absolute;
             background: #ffce1c;
+            width: 7.5rem;
         }
         .part1{
             width: 100%;
-        }
-        .part1 .title{
-            background: url("img/标题.png")no-repeat 100%/100%;
-            width: 7.5rem;
-            height: 7.69rem;
-            position: absolute;
         }
         .part1 .titleMove{
             background: url("img/限时优惠2.png")no-repeat 100%/100%;
@@ -51,46 +55,63 @@
                 transform-origin: top center;
             }
         }
+        .part1 .title{
+            background: url("img/标题.png")no-repeat 100%/100%;
+            height: 5.42rem;
+        }
         .part1 .titlePei{
             background: url("img/peitu1.png")no-repeat 100%/100%;
-            width: 7.5rem;
-            height: 8.63rem;
-            position: absolute;
-            bottom: -.7rem;
-            right: 0;
+            height: 7.96rem;
         }
 
         .part2{
             position: relative;
         }
-        .part2 .video{
+        .part2 .close{
+            position: absolute;
+            z-index: 999;
+            color: #fff;
+            font-size: .4rem;
+            line-height: .4rem;
+            top: .2rem;
+            right: .2rem;
+        }
+        .part2 .videobg{
+            background: url("img/video.png")no-repeat 100%/100%;
             height: 4.39rem;
+        }
+        .part2 .videobg video{
+            display: none;
+            z-index: 99;
+            position: relative;
         }
         .part2 .dujia{
             background: url("img/2p/独家礼遇.png")no-repeat 100%/100%;
-            width: 7.5rem;
             height: 5.67rem;
         }
 
         .part2 .sawtooth{
             background: url("img/2p/锯齿.png")no-repeat 100%/100%;
-            width: 7.5rem;
             height: 3.32rem;
-            position: absolute;
         }
-        .part2 .buttom{
+        .part2 .shareButtom{
             background: url("img/2p/button.png")no-repeat 100%/100%;
             width: 4.79rem;
             height: 1.26rem;
             position: absolute;
             left: 50%;
             margin-left: -2.395rem;
-            margin-top: 1.12rem;
+            margin-top: -2.56rem;
         }
-        .part2 .buttom a{
-            width: 4.79rem;
-            height: 1.26rem;
-            display: block;
+        .part2 .share{
+            background: url("img/2p/分享.png")no-repeat 100%/100%;
+            width: 3.65rem;
+            height: 7.03rem;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 99;
+            display: none;
         }
         .part3 .p1{
             background: url("img/3p/p1.png")no-repeat 100%/100%;
@@ -156,26 +177,96 @@
             text-align: center;
             margin-top: .8rem;
         }
+        .part3 .wrong{
+            background: url("img/3p/wrong.png")no-repeat 100%/100%;
+            width: 6.08rem;
+            height: 4.83rem;
+            position: fixed;
+            top:50%;
+            left:50%;
+            margin-top: -2.415rem;
+            margin-left: -3.04rem;
+            z-index: 99;
+            display: none;
+        }
+        .part3 .wrongTry{
+            width: 4.42rem;
+            height: 1.15rem;
+            position: fixed;
+            top:50%;
+            left:50%;
+            margin-top: 0.585rem;
+            margin-left: -2.21rem;
+            z-index: 99;
+            display: none;
+        }
+        .part3 .right{
+            background: url("img/3p/right.png")no-repeat 100%/100%;
+            width: 6.08rem;
+            height: 5.86rem;
+            position: fixed;
+            top:50%;
+            left:50%;
+            margin-top: -2.63rem;
+            margin-left: -3.04rem;
+            z-index: 99;
+            display: none;
+        }
+        .part3 .rightInput{
+            width: 4.3rem;
+            height: .5rem;
+            position: fixed;
+            top:50%;
+            left:50%;
+            margin-top: 0.785rem;
+            margin-left: -2.15rem;
+            z-index: 99;
+            display: none;
+        }
+        .part3 .rightOk{
+            width: 4.3rem;
+            height: .8rem;
+            position: fixed;
+            top:50%;
+            left:50%;
+            margin-top: 1.885rem;
+            margin-left: -2.15rem;
+            z-index: 99;
+            display: none;
+        }
+        .part3 .close{
+            background: url("img/3p/x.png")no-repeat 100%/100%;
+            width: .88rem;
+            height: .88rem;
+            position: fixed;
+            top:50%;
+            left:50%;
+            margin-top: -2.63rem;
+            margin-left: 2.45rem;
+            z-index: 999;
+            display: none;
+        }
     </style>
 </head>
 <body>
+<div class="cover"></div>
 <div class="adiv">
     <div class="part1">
-        <div class="title"></div>
         <div class="titleMove"></div>
+        <div class="title"></div>
         <div class="titlePei"></div>
     </div>
     <div class="part2">
-        <div class="video">
-            <video src="img/正片试.mp4" controls="controls" width="100%" height="100%">
+        <div class="close">X</div>
+        <div class="videobg">
+            <video src="img/正片试.mp4" controls="controls" width="100%" height="100%" class="video">
                 您的浏览器不支持 video 标签。
             </video>
         </div>
         <div class="dujia"></div>
         <div class="sawtooth"></div>
-        <div class="buttom">
-            <a href=""></a>
-        </div>
+        <div class="shareButtom"></div>
+        <div class="share"></div>
     </div>
     <div class="part3">
         <div class="p1"></div>
@@ -191,6 +282,12 @@
         <div class="math1">11</div>
         <div class="math2">22</div>
         <div class="math3">33</div>
+        <div class="wrong"></div>
+        <div class="wrongTry"></div>
+        <div class="right"></div>
+        <input type="email" placeholder="请输入你的邮箱地址：" class="rightInput"/>
+        <input type="button" class="rightOk"/>
+        <div class="close"></div>
     </div>
 </div>
 </body>
@@ -204,9 +301,44 @@
     var part2=document.getElementsByClassName('part2')[0];
     part2.style.height=window.screen.availHeight+'px';
 
+    var videobg=document.getElementsByClassName('videobg')[0];
+    var video=document.getElementsByClassName('video')[0];
+    var cover=document.getElementsByClassName('cover')[0];
+    var close=document.getElementsByClassName('close')[0];
+    close.onclick=function (){
+        video.style.display='none';
+        cover.style.display='none';
+        video.pause()
+    };
+    videobg.onclick=function (){
+        cover.style.display='block';
+        video.style.display="block";
+        video.play()
+    };
+    var shareButtom=document.getElementsByClassName('shareButtom')[0];
+    var share=document.getElementsByClassName('share')[0];
+    shareButtom.onclick=function (){
+        share.style.display='block';
+        cover.style.display='block';
+    };
+    share.onclick=function (){
+        share.style.display='none';
+        cover.style.display='none';
+    };
+    cover.onclick=function (){
+        share.style.display='none';
+        cover.style.display='none';
+    };
+
     var math1=document.getElementsByClassName('math1')[0];
     var math2=document.getElementsByClassName('math2')[0];
     var math3=document.getElementsByClassName('math3')[0];
+    var wrong=document.getElementsByClassName('wrong')[0];
+    var right=document.getElementsByClassName('right')[0];
+    var close1=document.getElementsByClassName('close')[1];
+    var wrongTry=document.getElementsByClassName('wrongTry')[0];
+    var rightInput=document.getElementsByClassName('rightInput')[0];
+    var rightOk=document.getElementsByClassName('rightOk')[0];
     function random(){
         var a=50000-10000;
         var num1=Math.round(Math.random()*40000+10000);
@@ -219,29 +351,62 @@
 
         math1.onclick=function (){
             if(Math.abs(num1-rightNum)<Math.abs(num2-rightNum)&&Math.abs(num1-rightNum)<Math.abs(num3-rightNum)){
-                alert('恭喜！您选对了！！！')
+                right.style.display='block';
+                close1.style.display='block';
+                rightInput.style.display='block';
+                rightOk.style.display='block';
             }else{
-                alert('很遗憾，请重新选择！')
+                wrong.style.display='block';
+                wrongTry.style.display='block';
+                close1.style.display='block';
             }
-        }
+        };
         math2.onclick=function (){
             if(Math.abs(num2-rightNum)<Math.abs(num1-rightNum)&&Math.abs(num2-rightNum)<Math.abs(num3-rightNum)){
-                alert('恭喜！您选对了！！！')
+                right.style.display='block';
+                close1.style.display='block';
+                rightInput.style.display='block';
+                rightOk.style.display='block';
             }else{
-                alert('很遗憾，请重新选择！')
+                wrong.style.display='block';
+                wrongTry.style.display='block';
+                close1.style.display='block';
             }
-        }
+        };
         math3.onclick=function (){
             if(Math.abs(num3-rightNum)<Math.abs(num2-rightNum)&&Math.abs(num3-rightNum)<Math.abs(num1-rightNum)){
-                alert('恭喜！您选对了！！！')
+                right.style.display='block';
+                close1.style.display='block';
+                rightInput.style.display='block';
+                rightOk.style.display='block';
             }else{
-                alert('很遗憾，请重新选择！')
+                wrong.style.display='block';
+                wrongTry.style.display='block';
+                close1.style.display='block';
             }
-        }
+        };
+
 
     }
     random();
+    close1.onclick=function (){
+        if(right.style.display=='block'){
+            right.style.display='none';
+            close1.style.display='none';
+            rightInput.style.display='none';
+            rightOk.style.display='none';
+        }else if(wrong.style.display=='block'){
+            wrong.style.display='none';
+            close1.style.display='none';
+            wrongTry.style.display='none';
+        }
+    };
+    wrongTry.onclick=function (){
+        wrong.style.display='none';
+        close1.style.display='none';
+        wrongTry.style.display='none';
 
+    }
 
 
 
