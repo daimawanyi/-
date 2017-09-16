@@ -12,6 +12,7 @@
         }
         html,body{
             height: 100%;
+            background: #ffce1c;
         }
         .overhidden{
             overflow: hidden;
@@ -29,7 +30,7 @@
             background: #ffce1c;
             width: 7.5rem;
             height: 100%;
-            
+
         }
         .part1{
             width: 100%;
@@ -362,7 +363,7 @@
         cover.style.display='block';
         video.style.display="block";
         video.play();
-        adiv.style.overflow='hidden';
+        //adiv.style.overflow='hidden';
     };
     var shareButtom=document.getElementsByClassName('shareButtom')[0];
     var share=document.getElementsByClassName('share')[0];
@@ -374,16 +375,24 @@
         share.style.display='none';
         cover.style.display='none';
     };
-    cover.onclick=function (){
+    cover.addEventListener('touchstart',function (){
         share.style.display='none';
         cover.style.display='none';
         if(video.style.display=="block"){
             video.style.display='none';
             close.style.display='none';
             video.pause();
-            adiv.style.overflow='auto';
         }
-    };
+    }, false);
+    /*cover=function (){
+        share.style.display='none';
+        cover.style.display='none';
+        if(video.style.display=="block"){
+            video.style.display='none';
+            close.style.display='none';
+            video.pause();
+        }
+    };*/
 
     var math1=document.getElementsByClassName('math1')[0];
     var math2=document.getElementsByClassName('math2')[0];
