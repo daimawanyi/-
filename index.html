@@ -300,11 +300,12 @@
     var desW = 750;
     var winW = document.documentElement.clientWidth;
     document.documentElement.style.fontSize = winW/desW*100+"px";
+    
 
     var part1=document.getElementsByClassName('part1')[0];
-    part1.style.height=window.screen.availHeight+'px';
+    part1.style.height=document.documentElement.clientHeight+'px';
     var part2=document.getElementsByClassName('part2')[0];
-    part2.style.height=window.screen.availHeight+'px';
+    part2.style.height=document.documentElement.clientHeight+'px';
 
     var videobg=document.getElementsByClassName('videobg')[0];
     var video=document.getElementsByClassName('video')[0];
