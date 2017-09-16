@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .adiv{
+            background: #ffce1c;
+        }
+        .part1{
+            width: 100%;
+        }
+        .part1 .title{
+            background: url("img/标题.png")no-repeat 100%/100%;
+            width: 7.5rem;
+            height: 7.69rem;
+            position: absolute;
+        }
+        .part1 .titleMove{
+            background: url("img/限时优惠2.png")no-repeat 100%/100%;
+            width: 1.15rem;
+            height: 1.53rem;
+            position: absolute;
+            top: 4.25rem;
+            right: .5rem;
+            -webkit-animation: go 1s ease-in-out alternate infinite;
+            -moz-animation: go 1s ease-in-out alternate infinite;
+            animation: go 1s ease-in-out alternate infinite;
+        }
+        @keyframes go {
+            0% {
+                -webkit-transform: rotate(15deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(15deg);
+                -moz-transform-origin: top center;
+                transform: rotate(15deg);
+                transform-origin: top center;
+            }
+            100% {
+                -webkit-transform: rotate(-15deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(-15deg);
+                -moz-transform-origin: top center;
+                transform: rotate(-15deg);
+                transform-origin: top center;
+            }
+        }
+        .part1 .titlePei{
+            background: url("img/peitu1.png")no-repeat 100%/100%;
+            width: 7.5rem;
+            height: 8.63rem;
+            position: absolute;
+            bottom: -.7rem;
+            right: 0;
+        }
+
+        .part2{
+            position: relative;
+        }
+        .part2 .video{
+            height: 4.39rem;
+        }
+        .part2 .dujia{
+            background: url("img/2p/独家礼遇.png")no-repeat 100%/100%;
+            width: 7.5rem;
+            height: 5.67rem;
+        }
+
+        .part2 .sawtooth{
+            background: url("img/2p/锯齿.png")no-repeat 100%/100%;
+            width: 7.5rem;
+            height: 3.32rem;
+            position: absolute;
+        }
+        .part2 .buttom{
+            background: url("img/2p/button.png")no-repeat 100%/100%;
+            width: 4.79rem;
+            height: 1.26rem;
+            position: absolute;
+            left: 50%;
+            margin-left: -2.395rem;
+            margin-top: 1.12rem;
+        }
+        .part2 .buttom a{
+            width: 4.79rem;
+            height: 1.26rem;
+            display: block;
+        }
+        .part3 .p1{
+            background: url("img/3p/p1.png")no-repeat 100%/100%;
+            height: 5.08rem;
+        }
+        .part3 .p2{
+            background: url("img/3p/p2.png")no-repeat 100%/100%;
+            height: 3.73rem;
+        }
+        .part3 .p3{
+            background: url("img/3p/p3.png")no-repeat 100%/100%;
+            height: 3.58rem;
+        }
+        .part3 .p4{
+            background: url("img/3p/p4.png")no-repeat 100%/100%;
+            height: 4.64rem;
+        }
+        .part3 .p5{
+            background: url("img/3p/p5.png")no-repeat 100%/100%;
+            height: 2.94rem;
+        }
+        .part3 .p6{
+            background: url("img/3p/p6.png")no-repeat 100%/100%;
+            height: 3.82rem;
+        }
+        .part3 .p7{
+            background: url("img/3p/p7.png")no-repeat 100%/100%;
+            height: 2.85rem;
+        }
+        .part3 .p8{
+            background: url("img/3p/p8.png")no-repeat 100%/100%;
+            height: 6.2rem;
+        }
+        .part3 .p9{
+            background: url("img/3p/p9.png")no-repeat 100%/100%;
+            height: 7.14rem;
+        }
+        .part3 .more{
+            font-size: .3rem;
+            line-height: .3rem;
+            color: #4f0f5e;
+            text-align: center;
+            margin-top: -1rem;
+        }
+        .part3 .math1{
+            font-size: .36rem;
+            line-height: .36rem;
+            color: #4f0f5e;
+            text-align: center;
+            margin-top: -6.2rem;
+        }
+        .part3 .math2{
+            font-size: .36rem;
+            line-height: .36rem;
+            color: #4f0f5e;
+            text-align: center;
+            margin-top: .8rem;
+        }
+        .part3 .math3{
+            font-size: .36rem;
+            line-height: .36rem;
+            color: #4f0f5e;
+            text-align: center;
+            margin-top: .8rem;
+        }
+    </style>
+</head>
+<body>
+<div class="adiv">
+    <div class="part1">
+        <div class="title"></div>
+        <div class="titleMove"></div>
+        <div class="titlePei"></div>
+    </div>
+    <div class="part2">
+        <div class="video">
+            <video src="img/正片试.mp4" controls="controls" width="100%" height="100%">
+                您的浏览器不支持 video 标签。
+            </video>
+        </div>
+        <div class="dujia"></div>
+        <div class="sawtooth"></div>
+        <div class="buttom">
+            <a href=""></a>
+        </div>
+    </div>
+    <div class="part3">
+        <div class="p1"></div>
+        <div class="p2"></div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+        <div class="p5"></div>
+        <div class="p6"></div>
+        <div class="p7"></div>
+        <div class="p8"></div>
+        <div class="p9"></div>
+        <div class="more">更多精彩，尽在网易新闻军事频道>></div>
+        <div class="math1">11</div>
+        <div class="math2">22</div>
+        <div class="math3">33</div>
+    </div>
+</div>
+</body>
+<script>
+    var desW = 750;
+    var winW = document.documentElement.clientWidth;
+    document.documentElement.style.fontSize = winW/desW*100+"px";
+
+    var part1=document.getElementsByClassName('part1')[0];
+    part1.style.height=window.screen.availHeight+'px';
+    var part2=document.getElementsByClassName('part2')[0];
+    part2.style.height=window.screen.availHeight+'px';
+
+    var math1=document.getElementsByClassName('math1')[0];
+    var math2=document.getElementsByClassName('math2')[0];
+    var math3=document.getElementsByClassName('math3')[0];
+    function random(){
+        var a=50000-10000;
+        var num1=Math.round(Math.random()*40000+10000);
+        var num2=Math.round(Math.random()*40000+10000);
+        var num3=Math.round(Math.random()*40000+10000);
+        math1.innerText=num1+'元';
+        math2.innerText=num2+'元';
+        math3.innerText=num3+'元';
+        var rightNum=30999;
+
+        math1.onclick=function (){
+            if(Math.abs(num1-rightNum)<Math.abs(num2-rightNum)&&Math.abs(num1-rightNum)<Math.abs(num3-rightNum)){
+                alert('恭喜！您选对了！！！')
+            }else{
+                alert('很遗憾，请重新选择！')
+            }
+        }
+        math2.onclick=function (){
+            if(Math.abs(num2-rightNum)<Math.abs(num1-rightNum)&&Math.abs(num2-rightNum)<Math.abs(num3-rightNum)){
+                alert('恭喜！您选对了！！！')
+            }else{
+                alert('很遗憾，请重新选择！')
+            }
+        }
+        math3.onclick=function (){
+            if(Math.abs(num3-rightNum)<Math.abs(num2-rightNum)&&Math.abs(num3-rightNum)<Math.abs(num1-rightNum)){
+                alert('恭喜！您选对了！！！')
+            }else{
+                alert('很遗憾，请重新选择！')
+            }
+        }
+
+    }
+    random();
+
+
+
+
+</script>
+</html>
