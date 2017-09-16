@@ -10,6 +10,10 @@
             margin: 0;
             padding: 0;
         }
+        .overhidden{
+            height: 100%;
+            overflow: hidden;
+        }
         .cover{
             background: rgba(0,0,0,.5);
             width: 100%;
@@ -344,6 +348,7 @@
     var cover=document.getElementsByClassName('cover')[0];
     var close=document.getElementsByClassName('close')[0];
     var body=document.getElementsByTagName('body')[0];
+    var html=document.getElementsByTagName('html')[0];
     /*close.onclick=function (){
         video.style.display='none';
         close.style.display='none';
@@ -354,7 +359,8 @@
         cover.style.display='block';
         video.style.display="block";
         video.play();
-        document.body.style.overflow='hidden'
+        body.className='overhidden';
+        html.className='overhidden';
     };
     var shareButtom=document.getElementsByClassName('shareButtom')[0];
     var share=document.getElementsByClassName('share')[0];
@@ -373,7 +379,8 @@
             video.style.display='none';
             close.style.display='none';
             video.pause();
-            document.body.style.overflow='auto'
+            body.className='';
+            html.className='';
         }
     };
 
